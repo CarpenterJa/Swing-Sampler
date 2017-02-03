@@ -46,7 +46,7 @@ public class MyCanvas extends Canvas
     			{
     	        try
     					{
-    					Thread.sleep(50);
+    					Thread.sleep(5);
     					} catch (InterruptedException e)
     					{
     					e.printStackTrace();
