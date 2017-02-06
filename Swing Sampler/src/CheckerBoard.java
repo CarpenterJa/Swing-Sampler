@@ -21,47 +21,41 @@ public class CheckerBoard extends Canvas
 
 		public void paint(Graphics graphics)
 			{
-				int x=0;
-				int y=0;
-				for(int i=0; i<8; i++)
+				int x = 0;
+				int y = 0;
+				for (int i = 0; i < 8; i++)
 					{
-						for(int j=0; j<8; j++)
+						for (int j = 0; j < 8; j++)
 							{
-								if(i % 2==0)
+								if (i % 2 == 0)
 									{
-								if(j % 2==0)
-									{
-								graphics.setColor(Color.red);
-								graphics.fillRect(x, y, 100, 100);
-									}
-								else
-									{
-										graphics.setColor(Color.black);
-										graphics.fillRect(x, y, 100, 100);
-									}
-									}
-								else
-									{
-										if(j % 2==0)
+										if (j % 2 == 0)
 											{
-										graphics.setColor(Color.black);
-										graphics.fillRect(x, y, 100, 100);
+												graphics.setColor(Color.red);
+												graphics.fillRect(x, y, 100, 100);
+											} else
+											{
+												graphics.setColor(Color.black);
+												graphics.fillRect(x, y, 100, 100);
 											}
-										else
+									} else
+									{
+										if (j % 2 == 0)
+											{
+												graphics.setColor(Color.black);
+												graphics.fillRect(x, y, 100, 100);
+											} else
 											{
 												graphics.setColor(Color.red);
 												graphics.fillRect(x, y, 100, 100);
 											}
 									}
-								x=x+100;
-								
-							}
-						x=0;
-						y=y+100;
-					}
+								x = x + 100;
 
-				
-				
+							}
+						x = 0;
+						y = y + 100;
+					}
 
 			}
 	}
