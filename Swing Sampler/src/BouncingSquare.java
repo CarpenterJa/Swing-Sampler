@@ -17,7 +17,7 @@ public class BouncingSquare extends Canvas
 				frame.getContentPane().add(canvas).setBackground(Color.black);
 				frame.setLocationRelativeTo(null); // Sets JPanel to center of
 													// screen
-				frame.setResizable(false);
+				frame.setResizable(true);
 				frame.setVisible(true);
 			}
 
@@ -27,7 +27,7 @@ public class BouncingSquare extends Canvas
 					{
 				for(i=0; i<=500; i++)
 					{
-						if(i==500)
+						if(i==480)
 							{
 							for(j=500; j>=0; j--)
 								{
