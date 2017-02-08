@@ -25,7 +25,7 @@ public class CustomSquare extends Canvas
 		public static void squareSize()
 		{
 			Scanner input=new Scanner(System.in);
-			System.out.println("How big would you like yourse square between 1-500?");
+			System.out.println("How big would you like yourse square between 1-400?");
 			size=input.nextInt();
 			System.out.println("Would you like it to be 1)blue or 2)red?");
 			color=input.nextInt();
@@ -43,7 +43,7 @@ public class CustomSquare extends Canvas
 						graphics.setColor(Color.red);
 					}
 
-				graphics.fillRect(0, 0, size, size);
+				graphics.fillRect(10, 10, size, size);
 
 			}
 	}
